@@ -1,12 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "MarketHive",
+  "projectDescription": "A job lead marketplace where employers post opportunities for free and job seekers pay a one-time fee to unlock employer contact details and application instructions.",
   "theme": "almond",
-  "name": "MarketHive",
-  "colors": {
-    "primary": "#8b54fb",
-    "light": "#5a49eb"
-  },
-  "favicon": "https://media.brand.dev/2ddf22e4-01e7-47fd-be0c-cf7f4aa7b8c1.png",
+  "primaryColor": "#8b54fb",
+  "lightColor": "#5a49eb",
+  "darkColor": null,
   "navigation": {
     "tabs": [
       {
@@ -70,20 +69,29 @@
       }
     ]
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@markethive.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Get Started",
-      "href": "/create-account"
-    }
-  },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Free job posting for employers",
+    "One-time payment to unlock employer contact details",
+    "Search and filter by category, location, salary, and job type",
+    "Secure payment integration via Minisend",
+    "Instant contact reveal after payment with email delivery",
+    "User accounts with payment history and saved jobs",
+    "Featured job listings for employers",
+    "Employer and admin dashboards",
+    "Job reviews and ratings",
+    "Mobile-first responsive design",
+    "SEO-optimized job listings"
+  ],
+  "publicApiSurface": [
+    "GET /jobs — search and list job postings",
+    "GET /jobs/:id — view job details and preview",
+    "POST /jobs — create a new job listing (employer)",
+    "POST /payments/unlock — initiate payment to unlock contact info",
+    "GET /payments/history — retrieve user payment history",
+    "POST /accounts/register — create a new user account",
+    "POST /accounts/login — authenticate a user",
+    "GET /jobs/saved — retrieve saved jobs for a user",
+    "POST /jobs/:id/save — save a job listing",
+    "POST /jobs/:id/review — submit a review for a job listing"
+  ]
 }

@@ -1,0 +1,125 @@
+---
+title: "Manage Users and Accounts in MarketHive Admin"
+sidebarTitle: "Managing Users"
+description: "View, search, and manage job seeker and employer accounts in the MarketHive admin panel — including suspension, verification, and activity review."
+---
+
+The MarketHive platform serves two distinct user types: employers who post job listings and job seekers who pay to unlock contact details. As an admin, you manage both groups from the **Admin → Users** panel. You have the ability to search and filter accounts, review activity histories, verify legitimate employers, take disciplinary action on bad actors, and assist users with account access issues — all from a single interface.
+
+## Searching and Filtering the User List
+
+The Users panel displays all registered accounts in a searchable, sortable table. Use the search bar and filters to locate specific accounts quickly.
+
+| Filter | Options |
+|---|---|
+| **Search** | Name, email address, or user ID |
+| **Account Type** | All, Job Seeker, Employer |
+| **Status** | All, Active, Suspended, Banned |
+| **Registration Date** | Date range picker |
+
+Click any row in the user table to open that user's full profile.
+
+## Viewing a User's Profile
+
+A user's admin profile gives you a complete picture of their account and activity on the platform.
+
+<CardGroup cols={2}>
+  <Card
+    title="Account Details"
+    icon="circle-user"
+    href="/admin/managing-users"
+  >
+    Name, email, account type, registration date, last login, and current account status.
+  </Card>
+  <Card
+    title="Listing History"
+    icon="briefcase"
+    href="/admin/managing-jobs"
+  >
+    For employer accounts: all listings ever posted, including their current status and submission dates.
+  </Card>
+  <Card
+    title="Payment History"
+    icon="credit-card"
+    href="/admin/managing-users"
+  >
+    For job seeker accounts: a record of every unlock transaction, including the listing unlocked, amount paid, and transaction date.
+  </Card>
+  <Card
+    title="Activity Log"
+    icon="clock-rotate-left"
+    href="/admin/managing-users"
+  >
+    A timestamped log of account actions, including logins, listing submissions, unlock purchases, and any admin actions taken on the account.
+  </Card>
+</CardGroup>
+
+## Suspending or Banning a User
+
+If a user is violating platform terms — such as posting fraudulent listings, abusing the unlock system, or harassing other users — you can suspend or permanently ban their account.
+
+**To suspend or ban a user:**
+
+1. Open the user's profile from the Users panel.
+2. Click **Account Actions** in the top-right corner.
+3. Select **Suspend Account** or **Ban Account**.
+4. Enter a clear reason for the action. This is recorded in the activity log and may be shared with the user.
+5. Click **Confirm** to apply the action immediately.
+
+- **Suspended** accounts are locked for a defined period (you set the duration) after which access is automatically restored.
+- **Banned** accounts are permanently locked. The user cannot log in or create a new account with the same email address.
+
+<Warning>
+  Suspending or banning a user takes effect immediately — they are logged out and prevented from logging back in the moment you confirm the action. Use suspension or banning only after careful review of the activity log and any reported evidence. Erroneous suspensions damage user trust and must be manually reversed.
+</Warning>
+
+## Unsuspending a User
+
+If you determine that a suspension was applied in error, or the suspension period has resolved the issue and you want to restore access early:
+
+1. Open the suspended user's profile.
+2. Click **Account Actions → Lift Suspension**.
+3. Add a note explaining why access is being restored ahead of schedule (optional but recommended for the audit trail).
+4. Click **Confirm**.
+
+The user will be able to log in again immediately.
+
+## Verifying Employer Accounts
+
+Employer verification adds a **Verified** badge to all of that employer's listings, signalling to job seekers that the employer's identity has been reviewed and confirmed by the platform team.
+
+**To verify an employer:**
+
+1. Open the employer's profile from the Users panel.
+2. Review their account details — check that their name, contact information, and listing history are consistent and credible.
+3. Click **Mark as Verified** in the account settings section.
+4. The **Verified** badge will appear on all of the employer's active and future listings immediately.
+
+<Tip>
+  Prioritise verifying employers who have posted multiple quality listings and have positive reviews from job seekers. Verified status carries real weight with job seekers and incentivises employers to maintain their listing quality.
+</Tip>
+
+## Handling User Complaints and Reports
+
+When a user is reported by another user, the report appears in the **Reports** queue within the Users panel. Each report includes the reporter's details, the reported user's profile, and a description of the issue.
+
+To handle a report:
+
+1. Navigate to **Admin → Users → Reports**.
+2. Select an open report to review the full details.
+3. Cross-reference the reported user's activity log for corroborating evidence.
+4. Take the appropriate action: dismiss the report (if unsubstantiated), issue a warning, suspend, or ban.
+5. Mark the report as **Resolved** and add a note summarising the outcome.
+
+The reporting user does not receive details of any action taken, but they will receive a confirmation that their report has been reviewed and resolved.
+
+## Resetting a User's Password
+
+If a user is locked out of their account or requests admin assistance with access:
+
+- **Send a password reset email:** Open the user's profile, click **Account Actions → Send Password Reset Email**. The user receives a secure reset link at their registered email address.
+- **Manually set a temporary password:** In cases where the user cannot access their email, click **Account Actions → Set Temporary Password**, enter a secure temporary password, and share it with the user through a verified out-of-band channel. Instruct them to change it immediately upon login.
+
+<Note>
+  Admin access to user account data — including payment history, activity logs, and personal details — must be used strictly for moderation, support, and platform integrity purposes. Accessing user data for any other reason is a violation of platform policy and applicable data privacy regulations.
+</Note>
