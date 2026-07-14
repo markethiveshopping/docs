@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Common Issues on MarketHive"
+title: "MarketHive Troubleshooting: Payments, Login, and Listings"
 sidebarTitle: "Troubleshooting"
 description: "Resolve common MarketHive issues including missed unlock emails, payment errors, login problems, and listing visibility issues with step-by-step fixes."
 ---
@@ -48,7 +48,7 @@ Common reasons a payment may fail include:
     Navigate back to the job listing you were trying to unlock. The listing will still show the **Unlock Contact Details** button because no successful payment was recorded.
   </Step>
   <Step title="Initiate the payment again">
-    Click **Unlock Contact Details** to start a fresh payment session. This generates a new, clean transaction — it is not a retry of the failed one.
+    Click **Unlock Contact Details** to start a fresh payment session on the Minisend payment page at `merchant.minisend.xyz/pay/rufus`. This generates a new, clean transaction — it is not a retry of the failed one.
   </Step>
   <Step title="Try a different payment method">
     On the Minisend payment page, select a different card or payment method if the one you used previously was declined. Ensure your card has sufficient funds and that online transactions are enabled by your bank.
@@ -70,13 +70,13 @@ Start by confirming you are entering the correct email address — the one you u
 If your credentials look correct but login still fails, reset your password using the steps below.
 
 <Steps>
-  <Step title="Click 'Forgot Password' on the login page">
+  <Step title="Click Forgot Password on the login page">
     On the MarketHive login screen, click the **Forgot Password?** link beneath the password field.
   </Step>
   <Step title="Enter your registered email address">
     Type in the email address associated with your account and submit the form. A password reset link will be sent to that address within a few minutes.
   </Step>
-  <Step title="Check your inbox (and spam folder)">
+  <Step title="Check your inbox and spam folder">
     Open the reset email from MarketHive. If it is not in your inbox, check your spam or junk folder. Click the reset link inside the email — note that reset links expire after a short period, so use it promptly.
   </Step>
   <Step title="Set a new password">
@@ -92,11 +92,19 @@ If resetting your password does not restore access, your account may have been s
 
 Contact information on MarketHive is provided directly by employers and reflects what they supplied at the time of posting. Employers occasionally change their phone numbers, email addresses, or hiring processes after a listing goes live, which can result in contact details that are no longer accurate.
 
-If you find that the contact details you unlocked are incorrect, invalid, or no longer active:
+If you find that the contact details you unlocked are incorrect, invalid, or no longer active, follow the steps below to report the listing.
 
-1. Use the **Report Listing** button on the job post page to flag the listing for review.
-2. Briefly describe the issue in the report form — for example, "Phone number is not in service" or "Email address bounces."
-3. Submit the report. MarketHive's admin team reviews all flagged listings and will contact the employer to request updated information, or remove the listing if it cannot be resolved.
+<Steps>
+  <Step title="Open the Report Listing form">
+    Navigate to the job post page and click the **Report Listing** button to open the report form.
+  </Step>
+  <Step title="Describe the issue">
+    Briefly explain what is wrong — for example, "Phone number is not in service" or "Email address bounces." The more detail you provide, the faster our team can act.
+  </Step>
+  <Step title="Submit your report">
+    Submit the form. MarketHive's admin team reviews all flagged listings and will contact the employer to request updated information, or remove the listing if the issue cannot be resolved.
+  </Step>
+</Steps>
 
 <Info>
   Reporting a listing helps protect other job seekers on the platform. Our admin team takes all reports seriously and aims to review flagged content promptly.
@@ -108,14 +116,23 @@ If you find that the contact details you unlocked are incorrect, invalid, or no 
 
 New listings and recently edited listings go through a short review process before they appear publicly in search results. This is normal and usually resolves within a few minutes.
 
-If your listing has not appeared after a reasonable wait, check the following:
+If your listing has not appeared after a reasonable wait, follow the steps below to check its status.
 
-1. **Log in to your Employer Dashboard** and locate the listing in question.
-2. **Check the listing status.** Each listing displays one of the following statuses:
-   - **Active** — the listing is live and visible in search results.
-   - **Under Review** — the listing is being checked for compliance with platform guidelines and will go live once approved.
-   - **Rejected** — the listing did not meet platform policies. You will receive guidance on what needs to change before resubmitting.
-3. **If the status is Under Review**, allow additional time for the admin team to complete their check. You do not need to resubmit.
+<Steps>
+  <Step title="Log in to your Employer Dashboard">
+    Sign in to your MarketHive account and navigate to your **Employer Dashboard**, then locate the listing in question.
+  </Step>
+  <Step title="Check the listing status">
+    Each listing displays one of the following statuses:
+
+    - **Active** — the listing is live and visible in search results.
+    - **Under Review** — the listing is being checked for compliance with platform guidelines and will go live once approved.
+    - **Rejected** — the listing did not meet platform policies. You will receive guidance on what needs to change before resubmitting.
+  </Step>
+  <Step title="Wait for review to complete if Under Review">
+    If the status is **Under Review**, allow additional time for the admin team to complete their check. You do not need to resubmit — resubmitting will restart the review process unnecessarily.
+  </Step>
+</Steps>
 
 <Tip>
   Listings with complete, detailed information — including a clear job title, full job description, location, contact details, and relevant category tags — pass the review process faster. Incomplete listings are more likely to be flagged for manual review or returned for more information.
